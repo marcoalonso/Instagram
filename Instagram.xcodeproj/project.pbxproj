@@ -11,6 +11,7 @@
 		6C25B3562A5F57B5005E1C3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25B3552A5F57B5005E1C3F /* ContentView.swift */; };
 		6C25B3582A5F57B6005E1C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C25B3572A5F57B6005E1C3F /* Assets.xcassets */; };
 		6C25B35B2A5F57B6005E1C3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C25B35A2A5F57B6005E1C3F /* Preview Assets.xcassets */; };
+		6C25B36E2A5F5998005E1C3F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25B36D2A5F5998005E1C3F /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6C25B3552A5F57B5005E1C3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C25B3572A5F57B6005E1C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C25B35A2A5F57B6005E1C3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C25B36D2A5F5998005E1C3F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,11 @@
 		6C25B3522A5F57B5005E1C3F /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				6C25B3532A5F57B5005E1C3F /* InstagramApp.swift */,
+				6C25B3612A5F57E9005E1C3F /* App */,
+				6C25B3622A5F57ED005E1C3F /* Core */,
+				6C25B3652A5F5805005E1C3F /* Services */,
+				6C25B3642A5F57FF005E1C3F /* Model */,
+				6C25B3632A5F57F3005E1C3F /* Extensions */,
 				6C25B3552A5F57B5005E1C3F /* ContentView.swift */,
 				6C25B3572A5F57B6005E1C3F /* Assets.xcassets */,
 				6C25B3592A5F57B6005E1C3F /* Preview Content */,
@@ -65,6 +71,99 @@
 				6C25B35A2A5F57B6005E1C3F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C25B3612A5F57E9005E1C3F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6C25B3532A5F57B5005E1C3F /* InstagramApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6C25B3622A5F57ED005E1C3F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6C25B3662A5F5826005E1C3F /* Authentication */,
+				6C25B3672A5F5835005E1C3F /* Feed */,
+				6C25B3682A5F583B005E1C3F /* Profile */,
+				6C25B3692A5F5840005E1C3F /* Root */,
+				6C25B36B2A5F5869005E1C3F /* TabBar */,
+				6C25B36A2A5F5849005E1C3F /* Search */,
+				6C25B36C2A5F5870005E1C3F /* UploadPost */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6C25B3632A5F57F3005E1C3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C25B3642A5F57FF005E1C3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C25B3652A5F5805005E1C3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6C25B3662A5F5826005E1C3F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6C25B3672A5F5835005E1C3F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		6C25B3682A5F583B005E1C3F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6C25B3692A5F5840005E1C3F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6C25B36A2A5F5849005E1C3F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6C25B36B2A5F5869005E1C3F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6C25B36D2A5F5998005E1C3F /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6C25B36C2A5F5870005E1C3F /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +238,7 @@
 			files = (
 				6C25B3562A5F57B5005E1C3F /* ContentView.swift in Sources */,
 				6C25B3542A5F57B5005E1C3F /* InstagramApp.swift in Sources */,
+				6C25B36E2A5F5998005E1C3F /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
