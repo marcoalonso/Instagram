@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C0B6D292A609392005F519C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B6D282A609392005F519C /* User.swift */; };
+		6C0B6D2B2A609F88005F519C /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B6D2A2A609F88005F519C /* CurrentUserProfileView.swift */; };
 		6C25B3542A5F57B5005E1C3F /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25B3532A5F57B5005E1C3F /* InstagramApp.swift */; };
 		6C25B3562A5F57B5005E1C3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25B3552A5F57B5005E1C3F /* ContentView.swift */; };
 		6C25B3582A5F57B6005E1C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C25B3572A5F57B6005E1C3F /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		6C0B6D282A609392005F519C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6C0B6D2A2A609F88005F519C /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		6C25B3502A5F57B5005E1C3F /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C25B3532A5F57B5005E1C3F /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		6C25B3552A5F57B5005E1C3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				6C25B36F2A5F5BFD005E1C3F /* ProfileView.swift */,
+				6C0B6D2A2A609F88005F519C /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				6C25B3562A5F57B5005E1C3F /* ContentView.swift in Sources */,
 				6C25B37D2A5FAEE3005E1C3F /* LoginView.swift in Sources */,
 				6C25B3542A5F57B5005E1C3F /* InstagramApp.swift in Sources */,
+				6C0B6D2B2A609F88005F519C /* CurrentUserProfileView.swift in Sources */,
 				6C2EA35E2A605DF3006E08C8 /* AddEmailView.swift in Sources */,
 				6C2EA3672A60683D006E08C8 /* CreateUsernameView.swift in Sources */,
 				6C2EA36B2A606BCF006E08C8 /* CompleteSignUpView.swift in Sources */,

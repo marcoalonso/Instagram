@@ -1,14 +1,13 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  Instagram
 //
-//  Created by Marco Alonso Rodriguez on 12/07/23.
+//  Created by Marco Alonso Rodriguez on 13/07/23.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    let user: User
+struct CurrentUserProfileView: View {
     
     private let gridItems: [ GridItem] = [
         .init(.flexible(), spacing: 1),
@@ -16,13 +15,15 @@ struct ProfileView: View {
         .init(.flexible(), spacing: 1)
     ]
     
+    
     var body: some View {
+        NavigationStack {
             ScrollView {
                 //header
                 VStack(spacing: 10.0) {
                     // pick and stats
                     HStack {
-                        Image(user.profileImageUrl ?? "alonso")
+                        Image("marcoalonso")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
@@ -42,14 +43,11 @@ struct ProfileView: View {
                     
                     // name and bio
                     VStack(alignment: .leading, spacing: 4) {
-                        if let fullname = user.fullname {
-                            Text(fullname)
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                        }
+                        Text("Marco Alonso")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
                         
-                        
-                        Text(user.bio ?? "")
+                        Text("iOS Developer")
                             .font(.footnote)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -75,7 +73,7 @@ struct ProfileView: View {
                 //post grid view
                 LazyVGrid(columns: gridItems, spacing: 1) {
                     ForEach(0 ... 15, id: \.self) { index in
-                        Image(user.profileImageUrl ?? "")
+                        Image("alonso")
                             .resizable()
                             .scaledToFill()
                     }
@@ -83,11 +81,22 @@ struct ProfileView: View {
                 .padding(10)
             }//Scroll
             .navigationBarTitle("Profile", displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                    }
+
+                }
+            }
+        }
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct CurrentUserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
+        CurrentUserProfileView()
     }
 }
