@@ -32,7 +32,11 @@ extension User {
         
         .init(id: NSUUID().uuidString, username: "Jennifer Lawrence 92", profileImageUrl: "jenniferl", fullname: "Jennifer Lawrence", bio: "Actriz estadounidense que se hizo un gran nombre debido a su participación en la saga de películas ‘Los juegos del hambre’. Sin embargo, luego ha escrito su nombre en Hollywood gracias a otras películas como ‘Operación Red Sparrow’ y ‘No miren arriba’.", email: "Jennifer.Lawrence234@gmail.com"),
         
-            .init(id: NSUUID().uuidString, username: "Salma Hayek 66", profileImageUrl: "salma", fullname: "Salma Hayek Pinault", bio: "Soy actriz, empresaria y productora mexicana, una de las nueve actrices latinoamericanas nominadas como mejor actriz principal o de reparto al premio Óscar.", email: "Salmita-Hayek76@gmail.com")
+            .init(id: NSUUID().uuidString, username: "Salma Hayek 66", profileImageUrl: "salma", fullname: "Salma Hayek Pinault", bio: "Soy actriz, empresaria y productora mexicana, una de las nueve actrices latinoamericanas nominadas como mejor actriz principal o de reparto al premio Óscar.", email: "Salmita-Hayek76@gmail.com"),
+        
+        .init(id: NSUUID().uuidString, username: "Will Smith 68", profileImageUrl: "will", fullname: "Will Smith", bio: "Soy conocido brevemente como The Fresh Prince, soy actor, rapero y productor de cine estadounidense. He tenido éxito en mis dos facetas artísticas:​ siendo ganador de un Premio Óscar con dos nominaciones previas.", email: "william.smith@gmail.com"),
+        
+        .init(id: NSUUID().uuidString, username: "Marco Alonso 93", profileImageUrl: "alonso", fullname: "Marco Alonso Rodriguez", bio: "Soy desarrollador iOS y apasionado por la tecnología, me gusta enseñar asi que trabajo como maestro e instructor, subo videos a mi canal de YouTube.", email: "marcoalonsoiosdev@gmail.com"),
         
     ]
 }

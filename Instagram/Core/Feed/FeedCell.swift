@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct FeedCell: View {
+    
+    let post: Post
+    
     var body: some View {
         VStack {
             //image + username
             HStack {
-                Image("margot")
+                if let user = post.user {
+                    Image(user.profileImageUrl ?? "")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
                 
-                Text("Margot")
+                    Text(user.username)
                     .font(.footnote)
                     .fontWeight(.semibold)
+                }
                 
                 Spacer()
                 
@@ -30,7 +35,7 @@ struct FeedCell: View {
             .padding(.leading, 8)
             
             // post image
-            Image("margot")
+            Image(post.imageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -66,7 +71,7 @@ struct FeedCell: View {
             .foregroundColor(.black)
             
             //likes label
-            Text("22 likes")
+            Text("\(post.likes) likes")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -75,8 +80,8 @@ struct FeedCell: View {
             
             //caption label
             HStack {
-                Text("Margot  ").fontWeight(.semibold) +
-                Text("This is a caption for now as das adsld as dasd las das dl,as dasld,alsd,as dlas, dlas dasl ,das dl,asl ,dasl ,asd asd lañsd ,dalf,dslf, ldsñf ,lsd,flr,oc,od,o oeodf  ...")
+                Text("  \(post.user?.username ?? "")").fontWeight(.semibold) +
+                Text(post.caption)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .font(.footnote)
@@ -95,6 +100,6 @@ struct FeedCell: View {
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
-        FeedCell()
+        FeedCell(post: Post.MOCK_POSTS[2])
     }
 }
