@@ -10,6 +10,7 @@ import Firebase
 import Combine
 
 class ContentViewModel: ObservableObject {
+    
     private let service = AuthService.shared
     private var cancelables = Set<AnyCancellable>()
     
@@ -23,5 +24,6 @@ class ContentViewModel: ObservableObject {
         service.$userSession.sink { [weak self] userSession in
             self?.userSession = userSession
         }
+        .store(in: &cancelables)
     }
 }
