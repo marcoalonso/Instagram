@@ -102,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C1002252A8BEB990049C9A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6CD543692A65D79E00F0F534 /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C1002262A8BEBAB0049C9A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CD543672A65D4B800F0F534 /* UploadPostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6C16555A2A689B3900B84D0F /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,8 +286,8 @@
 		6C25B36C2A5F5870005E1C3F /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
-				6CD543672A65D4B800F0F534 /* UploadPostView.swift */,
-				6CD543692A65D79E00F0F534 /* UploadPostViewModel.swift */,
+				6C1002262A8BEBAB0049C9A9 /* View */,
+				6C1002252A8BEB990049C9A9 /* ViewModel */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
