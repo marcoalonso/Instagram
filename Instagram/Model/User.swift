@@ -24,7 +24,7 @@ struct User: Identifiable, Codable, Hashable {
 
 extension User {
     static var MOCK_USERS: [User] = [
-        .init(id: NSUUID().uuidString, username: "MargotRobbie09", profileImageUrl: "margot", fullname: "Margot Robbie", bio: "She was born on 1990 and she is one of the most famous actress.", email: "margot_robbie_90@gmail.com"),
+        .init(id: NSUUID().uuidString, username: "MargotRobbie09", profileImageUrl: nil, fullname: "Margot Robbie", bio: "She was born on 1990 and she is one of the most famous actress.", email: "margot_robbie_90@gmail.com"),
         
         .init(id: NSUUID().uuidString, username: "Dwayne Johnson", profileImageUrl: "dwayne", fullname: "Dwayne Johnson ", bio: "Dwayne Douglas Johnson​ es un actor y exluchador profesional estadounidense.​ Se desempeñó como luchador profesional para la WWE hasta su retirada oficial en 2019, ​ con el objetivo de centrarse en su carrera artística.", email: "margot_robbie_90@gmail.com"),
         
